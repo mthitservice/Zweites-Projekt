@@ -25,6 +25,7 @@ function init()
 {
 
 showChar();
+showChar1();
 
     $("#Laden").click(function(){
 
@@ -99,6 +100,19 @@ console.log("complete");
 
 
 }
+
+function showChar1(){
+
+    $.getJSON('data.json',function(cfg){
+        
+        console.log("success");
+        //console.log(data);
+        
+    var ctx =$("#char1");
+    const ch=new Chart(ctx,cfg);});
+    
+}
+
 
 function showChar() {
 
