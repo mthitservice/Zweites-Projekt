@@ -23,6 +23,9 @@ $(document).ready(function(){
 
 function init()
 {
+
+showChar();
+
     $("#Laden").click(function(){
 
         getData();
@@ -95,6 +98,44 @@ console.log("complete");
 });
 
 
-
 }
+
+function showChar() {
+
+    const cfg={
+
+    type:'doughnut',
+    data:{
+    labels:[
+            'Red',
+            'Blue',
+            'Yellow'
+    ],
+    datasets: [{
+
+        label: 'Mein erstes Chart',
+        data: [300,50,100],
+        backgroundColor:[
+            'rgb(255,99,132)',
+             'rgb(54,162,235)',
+              'rgb(255,205,86)'
+        ],
+        hoverOffset:4
+    }]
+}};
+var ctx =$("#char");
+const ch=new Chart(ctx,cfg);
+
+
+
+    }
+
+
+
+
+
+
+
+
+
 
