@@ -23,8 +23,15 @@ $(document).ready(function(){
 
 function init()
 {
-$("#cmdabsenden").click(function(){
-            $(".team").toggle(1000);
+     $("#cmdabsenden").click(function(){
+      
+        // setTimeout erzeugt verzögerung beim Start
+    setTimeout(function(){    
+            $("#demo-modal").modal();         
+      },500);
+        
+        
+        $(".team").toggle(1000);
            });
 
 }
