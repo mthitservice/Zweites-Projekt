@@ -58,9 +58,18 @@ function getData()
 $.getJSON('https://jsonplaceholder.typicode.com/users',function(data){
 var items=[];
 console.log(data);
+// Wenn Daten zurück kommen
+}).done(function(){
+// Wenn all Daten geladen wurden (zweiter aufruf)
 
 })
-// Wenn Daten zurück kommen
+
+
+
+
+
+;
+
 
 // Bei Fehler
 
