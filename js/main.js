@@ -14,7 +14,13 @@
      
 $(document).ready(function(){
 
-alert('test2');
+    $("#cmdabsenden").click(function(){
+
+            $(".team").show();
+
+
+    });
+    
 
 });
 
