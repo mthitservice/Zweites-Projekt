@@ -103,7 +103,7 @@ console.log("complete");
 
 function showChar1(){
 
-    $.getJSON('data.json',function(cfg){
+    $.getJSON('https://mth-it-service.com/data.json',function(cfg){
         
         console.log("success");
         //console.log(data);
