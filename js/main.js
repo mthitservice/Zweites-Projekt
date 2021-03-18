@@ -57,21 +57,41 @@ function getData()
 // Laden der Daten
 $.getJSON('https://jsonplaceholder.typicode.com/users',function(data){
 var items=[];
-console.log(data);
+console.log("success");
+//console.log(data);
+$.each(data,function(i,field){
+
+$("#Kontakte").append("<div class='card col-lg-3 col-md-3 col-sm-4 text-center'><img class='card-img-top rounded-circle' src='mensch3.png' alt='Mitarbeiterfoto'/><div class='card-body'><h4 class='card-title'>" + field.name +"</h4><p class='card-text'>Sportler</p></div></div>")
+
+});
+
+/*                <div class="card col-lg-3 col-md-3 col-sm-4 text-center"> 
+                    <img class="card-img-top rounded-circle" src="mensch3.png" alt="Mitarbeiterfoto"/>
+                    <div class="card-body">
+                        <h4 class="card-title">field.name</h4>
+                        <p class="card-text">Sportler</p>
+                    </div>
+
+                </div>
+*/                
+
+
+
 // Wenn Daten zurück kommen
 }).done(function(){
 // Wenn all Daten geladen wurden (zweiter aufruf)
 
-})
-
-
-
-
-
-;
-
-
+console.log("second success");
+}).fail(function(){
 // Bei Fehler
+console.log("error");
+
+}).always(function(){
+console.log("complete");
+
+});
+
+
 
 }
 
