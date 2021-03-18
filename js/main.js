@@ -15,14 +15,18 @@
      // JQuery Metode ready wartet darauf das alle Elemente in die DOM gelanden sind 
 $(document).ready(function(){
 
-    $("#cmdabsenden").click(function(){
-
-            $(".team").show();
-
-
-    });
+    init();
+    
     
 
 });
+
+function init()
+{
+$("#cmdabsenden").click(function(){
+            $(".team").toggle(1000);
+           });
+
+}
 
 
