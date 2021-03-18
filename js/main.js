@@ -12,6 +12,7 @@
      // Bedingungen 
      // Schleifen
      
+     // JQuery Metode ready wartet darauf das alle Elemente in die DOM gelanden sind 
 $(document).ready(function(){
 
     $("#cmdabsenden").click(function(){
